@@ -38,7 +38,7 @@ class HomeController
 
                     Session::put("pid",$pid);
                    if ($rec->{'usertype'} == 2) {
-                        return redirect()->intended('admindashboard');
+                        return redirect()->intended('systemusers');
                     }
                        else{
                                     return redirect('/')->with('error', 'You cant acess! website is not working.');
