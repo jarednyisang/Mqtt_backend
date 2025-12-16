@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\TBUsers;
 use App\Models\TBCountries;
-use App\Models\TBSurvey;
-use App\Models\TBSurveyResponse;
-use App\Models\TBTransactions;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Hash;
@@ -91,9 +88,8 @@ public function index()
 { 
    
     $countries = TBCountries::orderBy('id', 'asc')->get();
-  $getsurveys = TBSurvey::orderBy('id', 'desc')->take(4)->get(); 
 
-    return view('welcome',compact('countries','getsurveys'));
+    return view('welcome',compact('countries'));
 
 }
 
