@@ -4,6 +4,7 @@ namespace App\Services;
 
 use PhpMqtt\Client\MqttClient;
 use PhpMqtt\Client\ConnectionSettings;
+use Illuminate\Support\Facades\Log;
 
 class MqttService
 {
@@ -15,20 +16,25 @@ class MqttService
         $this->client = new MqttClient(
             config('mqtt.host'),
             config('mqtt.port'),
-            config('mqtt.client_id')
+            config('mqtt.client_id') . '_' . uniqid()
         );
 
         $this->connectionSettings = (new ConnectionSettings)
             ->setUsername(config('mqtt.username'))
             ->setPassword(config('mqtt.password'))
             ->setKeepAliveInterval(60)
-            ->setCleanSession(config('mqtt.clean_session'));
+            ->setLastWillTopic('chloride/status')
+            ->setLastWillMessage('offline')
+            ->setLastWillQualityOfService(1);
     }
 
-    public function publish($topic, $message, $qos = 0, $retain = false)
+    /**
+     * Publish message to MQTT topic
+     */
+    public function publish($topic, $message, $qos = 1, $retain = false)
     {
         try {
-            $this->client->connect($this->connectionSettings);
+            $this->client->connect($this->connectionSettings, true);
             
             $payload = is_array($message) ? json_encode($message) : $message;
             
@@ -36,24 +42,50 @@ class MqttService
             
             $this->client->disconnect();
             
+            Log::info("MQTT Published to {$topic}: {$payload}");
+            
             return true;
         } catch (\Exception $e) {
-            \Log::error('MQTT Publish Error: ' . $e->getMessage());
+            Log::error('MQTT Publish Error: ' . $e->getMessage());
             return false;
         }
     }
 
-    public function subscribe($topic, $callback, $qos = 0)
+    /**
+     * Publish battery status
+     */
+    public function publishBatteryStatus($batteryData)
     {
-        try {
-            $this->client->connect($this->connectionSettings);
-            
-            $this->client->subscribe($topic, $callback, $qos);
-            
-            $this->client->loop(true);
-            
-        } catch (\Exception $e) {
-            \Log::error('MQTT Subscribe Error: ' . $e->getMessage());
-        }
+        return $this->publish('chloride/batteries/status', $batteryData);
+    }
+
+    /**
+     * Publish solar data
+     */
+    public function publishSolarData($solarData)
+    {
+        return $this->publish('chloride/solar/data', $solarData);
+    }
+
+    /**
+     * Publish notification to all users
+     */
+    public function publishNotification($message)
+    {
+        return $this->publish('chloride/notifications', [
+            'message' => $message,
+            'timestamp' => now()->toIso8601String()
+        ]);
+    }
+
+    /**
+     * Publish alert to specific user
+     */
+    public function publishUserAlert($userId, $alertMessage)
+    {
+        return $this->publish("chloride/user/{$userId}/alerts", [
+            'alert' => $alertMessage,
+            'timestamp' => now()->toIso8601String()
+        ]);
     }
 }
