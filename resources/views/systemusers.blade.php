@@ -521,9 +521,7 @@
                     <th>Fullname</th>
                     <th>Email</th>
                     <th>Country</th>
-                    <th>Available</th>
-                    <th>Pending </th>
-                    <th>Referals </th>
+                   
 
 
                 </tr>
@@ -535,9 +533,7 @@
                 <td>{{ $user->{'fullname'} ?? 'N/A' }}</td>
                 <td>{{ $user->{'email'} ?? 'N/A' }}</td>
                <td>{{ $user->country->{'country_name'} ?? 'Kenya' }}</td>
-                <td>{{ $user->availablebalance }}</td>
-                <td>{{ $user->pendingreferal }}</td>
-                <td>{{ $user->totalreferal }}</td>
+              
 
               </tr>
             @endforeach

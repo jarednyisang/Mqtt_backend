@@ -6,17 +6,12 @@
         </div>
         <ul class="sidebar-menu">
             <li>
-                <a href="admindashboard" class="active">
+                <a href="systemusers" class="active">
                     <i class="fas fa-home"></i>
                     <span>Home</span>
                 </a>
             </li>
-            <li>
-                <a href="systemusers">
-                    <i class="fas fa-clipboard-list"></i>
-                    <span>System users</span>
-                </a>
-            </li>
+ 
           
           
            
