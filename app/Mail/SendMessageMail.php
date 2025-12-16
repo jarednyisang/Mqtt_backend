@@ -62,14 +62,14 @@ public function build()
             <!-- App Logo (round) -->
             <div style='text-align: center; margin-bottom: 20px;'>
                 <img src='http://ecommerce.siliconhighland.com/images/classicpos1.png' 
-                     alt='Classic POS Logo' 
+                     alt='CHLORIDE EXIDE MQTT' 
                      width='120' 
                      style='border-radius: 50%; display: block; margin: 0 auto;'>
             </div>
 
             <p>{$this->mailMessage}</p>
 
-            <p><strong>Classic POS</strong></p>
+            <p><strong>CHLORIDE EXIDE MQTT</strong></p>
 
             " . ($this->senderName ? "<p>Regards,</p><p>{$this->senderName}</p>" : "") . "
             " . ($this->senderEmail ? "<p>Email: siliconhighlandltd@gmail.com</p>" : "") . "
