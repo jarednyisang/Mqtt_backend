@@ -430,8 +430,8 @@
         <div class="container hero-content">
             <div class="row align-items-center">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="hero-title">Your Voice Matters Globally</h1>
-                    <p class="hero-subtitle">Join millions worldwide sharing opinions that shape the future. Participate in surveys, earn rewards, and make an impact.</p>
+                    <h1 class="hero-title">Energy Solutions for All</h1>
+                    <p class="hero-subtitle">Powering Your World with Automotive Batteries, Solar Energy, Energy Storage, and Water Heating Solutions.</p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap">
                         <button class="btn btn-light btn-lg px-5" data-bs-toggle="modal" data-bs-target="#signupModal">
                             Get Started <i class="fas fa-arrow-right ms-2"></i>
