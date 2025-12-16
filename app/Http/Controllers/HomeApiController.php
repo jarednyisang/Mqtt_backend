@@ -169,24 +169,6 @@ public function store_newuser(Request $request)
   }
 
 
-  public function get_pricelist()
-  {
-      try {
-  
-        $price = TBPriceList::where('id', 1)->first();
-          $priceAmount=$price->{'amount'};
-  
-         return response()->json([
-             'amountData' => $priceAmount
-         ], 200);
-  
-      } catch (\Exception $e) {
-          return response()->json([
-              'error' => true,
-              'message' => $e->getMessage()
-          ], 400);
-      }
-  }
 
 
     
