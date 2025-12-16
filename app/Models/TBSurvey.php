@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class TBSurvey extends Model
 {
-    protected $connection = "surveyhub";
+    protected $connection = "chloride";
     public $table = "surveys";
     public $primaryKey = "id";
     protected $guarded = [];

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class TBTransactions extends Model
 {
-    protected $connection = "surveyhub";
+    protected $connection = "chloride";
     public $table = "transactions";
     public $primaryKey = "id";
     protected $guarded = [];

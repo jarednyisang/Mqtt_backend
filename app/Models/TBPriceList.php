@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class TBPriceList extends Model
 {  
-    protected $connection = "surveyhub";
+    protected $connection = "chloride";
     public $table = "pricelist";
     public $primaryKey = "id";
     protected $guarded = [];

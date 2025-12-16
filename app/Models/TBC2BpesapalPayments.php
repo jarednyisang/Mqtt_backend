@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class TBC2BpesapalPayments extends Model
 {  
-    protected $connection = "surveyhub";
+    protected $connection = "chloride";
     public $table = "pesapalPayments";
     public $primaryKey = "id";
     protected $guarded = [];

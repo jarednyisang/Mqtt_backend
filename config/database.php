@@ -96,13 +96,13 @@ return [
             'search_path' => 'public',
             'sslmode' => 'prefer',
         ],
-        'surveyhub' => [
+        'chloride' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
             'port'      => env('DB_PORT', 3306),
-              'database'  => 'surveyhub',
-                     'username'  => env('DB_USERNAME', 'surveyhub'),
-                     'password'  => env('DB_PASSWORD', 'Gch32iYDHmPs6FZD'),
+              'database'  => 'chloride',
+                     'username'  => env('DB_USERNAME', 'chloride'),
+                     'password'  => env('DB_PASSWORD', 'A6SdPM66mZst8sRT'),
                      'charset'   => 'utf8mb4',
                      'collation' => 'utf8mb4_unicode_ci',
                      'prefix'    => '',
