@@ -38,8 +38,9 @@ class MqttService
             
             $payload = is_array($message) ? json_encode($message) : $message;
             
-            $this->client->publish($topic, $payload, $qos, $retain);
-            
+            // $this->client->publish($topic, $payload, $qos, $retain);
+            $this->client->publish($topic, $payload, $qos, true);
+
             $this->client->disconnect();
             
             Log::info("MQTT Published to {$topic}: {$payload}");
