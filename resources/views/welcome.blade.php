@@ -404,7 +404,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#surveys">Surveys</a>
+                        <a class="nav-link text-white" href="#surveys">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#features">Features</a>
