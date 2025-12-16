@@ -467,7 +467,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Why Choose Chloride Exide?</h2>
-                <p class="section-subtitle">The world's most trusted survey platform</p>
+                <p class="section-subtitle">We're only as good as our customers say we are</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-3">
@@ -475,8 +475,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h4>Global Reach</h4>
-                        <p>Connect with participants from over 180 countries worldwide</p>
+                        <h4>Automotive Batteries</h4>
+                        <p>We're only as good as our customers say we are</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -484,8 +484,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
-                        <h4>Secure & Private</h4>
-                        <p>Your data is protected with enterprise-grade security</p>
+                        <h4>Energy Storage</h4>
+                        <p>We're only as good as our customers say we are</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -493,8 +493,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-gift"></i>
                         </div>
-                        <h4>Earn Rewards</h4>
-                        <p>Get paid for your valuable opinions and insights</p>
+                        <h4>Solar Energy</h4>
+                        <p>We're only as good as our customers say we are</p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -502,57 +502,15 @@
                         <div class="feature-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h4>Real Impact</h4>
-                        <p>Your feedback shapes products and services globally</p>
+                        <h4>Water Heatingt</h4>
+                        <p>We're only as good as our customers say we are</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Surveys Section -->
-    <section class="surveys-section" id="surveys">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title">Featured Surveys</h2>
-                <p class="section-subtitle">Start earning by sharing your opinions today</p>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <!-- Survey 1 -->
-                     @foreach ($getsurveys as $survey)
-                    <div class="survey-card">
-                        <h3 class="survey-title">{{ $survey->{'surveytitle'} ?? 'N/A' }}</h3>
-                        <p class="survey-description">{{ $survey->{'surveydescription'} ?? 'N/A' }}</p>
-                        <div class="survey-meta">
-                            <div class="meta-item">
-                                <i class="fas fa-users"></i>
-                                <span>{{ $survey->{'participants'} ?? 'N/A' }} participants</span>
-                            </div>
-                            <div class="meta-item">
-                                <i class="fas fa-clock"></i>
-                                <span>{{ $survey->{'minutes'} ?? 'N/A' }} minutes</span>
-                            </div>
-                            <div class="reward-badge">
-                                Earn ${{ $survey->{'rewardamount'} ?? 'N/A' }}
-                            </div>
-                            <button class="btn btn-primary-custom ms-auto" 
-        data-bs-toggle="modal" 
-        data-bs-target="#loginModal">
-    Take Survey <i class="fas fa-arrow-right ms-2"></i>
-</button>
-
-                        </div>
-                    </div>
-
-                     @endforeach
-
-                 
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer id="about">
