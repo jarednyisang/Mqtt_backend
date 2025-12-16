@@ -31,26 +31,44 @@ class MqttService
     /**
      * Publish message to MQTT topic
      */
-    public function publish($topic, $message, $qos = 1, $retain = false)
-    {
-        try {
-            $this->client->connect($this->connectionSettings, true);
-            
-            $payload = is_array($message) ? json_encode($message) : $message;
-            
-            // $this->client->publish($topic, $payload, $qos, $retain);
-            $this->client->publish($topic, $payload, $qos, true);
+    public function publish($topic, $message, $qos = 1, $retain = true)
+{
+    try {
+        $this->client->connect($this->connectionSettings, true);
 
-            $this->client->disconnect();
-            
-            Log::info("MQTT Published to {$topic}: {$payload}");
-            
-            return true;
-        } catch (\Exception $e) {
-            Log::error('MQTT Publish Error: ' . $e->getMessage());
-            return false;
-        }
+        $payload = is_array($message) ? json_encode($message) : $message;
+
+        $this->client->publish($topic, $payload, $qos, $retain);
+
+        $this->client->disconnect();
+
+        return true;
+    } catch (\Exception $e) {
+        Log::error('MQTT Publish Error: ' . $e->getMessage());
+        return false;
     }
+}
+
+    // public function publish($topic, $message, $qos = 1, $retain = false)
+    // {
+    //     try {
+    //         $this->client->connect($this->connectionSettings, true);
+            
+    //         $payload = is_array($message) ? json_encode($message) : $message;
+            
+    //         // $this->client->publish($topic, $payload, $qos, $retain);
+    //         $this->client->publish($topic, $payload, $qos, true);
+
+    //         $this->client->disconnect();
+            
+    //         Log::info("MQTT Published to {$topic}: {$payload}");
+            
+    //         return true;
+    //     } catch (\Exception $e) {
+    //         Log::error('MQTT Publish Error: ' . $e->getMessage());
+    //         return false;
+    //     }
+    // }
 
     /**
      * Publish battery status
