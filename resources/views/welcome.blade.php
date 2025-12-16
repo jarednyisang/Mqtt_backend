@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Hub - Global Survey Platform</title>
+    <title>Chloride Exide</title>
     <link rel="icon" href="data:,">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -396,7 +396,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-globe"></i> Survey Hub
+                <i class="fas fa-globe"></i> Chloride Exide
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -466,7 +466,7 @@
     <section class="features-section" id="features">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Why Choose Survey Hub?</h2>
+                <h2 class="section-title">Why Choose Chloride Exide?</h2>
                 <p class="section-subtitle">The world's most trusted survey platform</p>
             </div>
             <div class="row g-4">
@@ -559,7 +559,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <h4><i class="fas fa-globe me-2"></i>Survey Hub</h4>
+                    <h4><i class="fas fa-globe me-2"></i>Chloride Exide</h4>
                     <p class="mt-3">Connecting voices from around the world to create meaningful change through surveys and insights.</p>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -583,7 +583,7 @@
             </div>
             <hr class="bg-white">
             <div class="text-center py-3">
-                <p class="mb-0">&copy; 2025 Survey Hub. All rights reserved.</p>
+                <p class="mb-0">&copy; 2025 Chloride Exide. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -593,7 +593,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Login to Survey Hub</h5>
+                    <h5 class="modal-title">Login to Chloride Exide</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-4">
@@ -678,7 +678,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="aboutModalLabel">
-                    <i class="fas fa-info-circle me-2"></i> About Survey Hub
+                    <i class="fas fa-info-circle me-2"></i> About Chloride Exide
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -688,7 +688,7 @@
                     <div class="feature-icon mx-auto mb-3" style="width: 80px; height: 80px;">
                         <i class="fas fa-globe"></i>
                     </div>
-                    <h4 class="fw-bold mb-3">Survey Hub</h4>
+                    <h4 class="fw-bold mb-3">Chloride Exide</h4>
                     <p class="lead text-muted">
                         Connecting Voices, Shaping the Future
                     </p>
@@ -697,7 +697,7 @@
                 <!-- Company Description -->
                 <div class="mb-4">
                     <p class="mb-3">
-                        <strong>Survey Hub</strong> is a research and innovation company headquartered in 
+                        <strong>Chloride Exide</strong> is a research and innovation company headquartered in 
                         <strong>Silicon Valley, California, USA</strong>. We are at the forefront of advancing 
                         global progress through cutting-edge research in:
                     </p>
@@ -797,7 +797,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="learnMoreModalLabel">
-                    <i class="fas fa-lightbulb me-2"></i> How Survey Hub Works
+                    <i class="fas fa-lightbulb me-2"></i> How Chloride Exide Works
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -892,7 +892,7 @@
                 <!-- Key Features -->
                 <div class="mb-4">
                     <h5 class="fw-bold mb-3">
-                        <i class="fas fa-star me-2" style="color: #f59e0b;"></i> Why Users Love Survey Hub
+                        <i class="fas fa-star me-2" style="color: #f59e0b;"></i> Why Users Love Chloride Exide
                     </h5>
 
                     <div class="row g-3">
@@ -992,7 +992,7 @@
                         <div class="accordion-item border-0 mb-2">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    Is Survey Hub really free to join?
+                                    Is Chloride Exide really free to join?
                                 </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -1037,7 +1037,7 @@
                 <div class="text-center p-4 rounded" style="background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(6, 182, 212, 0.1));">
                     <h5 class="fw-bold mb-3">Ready to Start Earning?</h5>
                     <p class="text-muted mb-3">
-                        Join over 5 million users already earning with Survey Hub
+                        Join over 5 million users already earning with Chloride Exide
                     </p>
                     <button class="btn btn-primary-custom btn-lg px-5" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">
                         Create Free Account <i class="fas fa-arrow-right ms-2"></i>
@@ -1062,7 +1062,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Join Survey Hub Today</h5>
+                    <h5 class="modal-title">Join Chloride Exide Today</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-4">

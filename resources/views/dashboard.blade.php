@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Survey Hub</title>
+    <title> Chloride Exide</title>
     <link rel="icon" href="data:,">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -869,7 +869,7 @@
         <div class="modal-content" style="border-radius: 20px;">
             <div class="modal-header" style="background: linear-gradient(135deg, #ef4444, #dc2626); color: white; border-radius: 20px 20px 0 0;">
                 <h5 class="modal-title" id="donationModalLabel">
-                    <i class="fas fa-heart me-2"></i> Support Survey Hub
+                    <i class="fas fa-heart me-2"></i> Support Chloride Exide
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -921,7 +921,7 @@
 
                     <div class="text-center mb-3">
                         <p class="mb-2 text-muted small">
-                            <i class="fas fa-lock"></i> Secure payment powered by Survey Hub
+                            <i class="fas fa-lock"></i> Secure payment powered by Chloride Exide
                         </p>
                     </div>
 

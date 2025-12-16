@@ -1,7 +1,7 @@
 <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
             <a href="#" class="sidebar-brand">
-                <i class="fas fa-globe"></i> Survey Hub
+                <i class="fas fa-globe"></i> Chloride Exide
             </a>
         </div>
         <ul class="sidebar-menu">
