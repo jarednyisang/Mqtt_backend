@@ -19,8 +19,8 @@ Route::put('updatepassword', 'App\Http\Controllers\UpdateApiController@update_pa
 Route::put('forgotpassword', 'App\Http\Controllers\UpdateApiController@forgot_password');
 
 
-Route::post('updatebattery', 'App\Http\Controllers\MqttController@updateBatteryStatus');
-Route::post('solarupdate', 'App\Http\Controllers\MqttController@updateSolarData');
-Route::post('notification', 'App\Http\Controllers\MqttController@sendNotification');
-Route::post('sendalert', 'App\Http\Controllers\MqttController@sendUserAlert');
+Route::post('/battery/update', 'App\Http\Controllers\MqttController@updateBatteryStatus');
+Route::post('/solar/update', 'App\Http\Controllers\MqttController@updateSolarData');
+Route::post('/notification/send', 'App\Http\Controllers\MqttController@sendNotification');
+Route::post('alert/user', 'App\Http\Controllers\MqttController@sendUserAlert');
 Route::post('simulate', 'App\Http\Controllers\MqttController@simulateData');
